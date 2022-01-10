@@ -26,7 +26,6 @@ architecture Behavioral of counter_2proc is
          variable v : register_type;
       begin
          v := r;
-			v.done := r.done;
          if r.enable = '1' then 
             v.counter := r.counter+1; 
          else
